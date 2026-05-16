@@ -1,0 +1,203 @@
+:root {
+  --primary: #a491d2;
+  --primary-light: #cdc3e6;
+  --primary-soft: #d4dcff;
+
+  --background: #ffffff;
+  --surface: #e8ebe4;
+  --border: #bec1bb;
+
+  --text-primary: #1b1f21;
+  --text-secondary: #444749;
+  --text-muted: #828485;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* MAIN */
+.hero {
+  display: flex;
+  background: var(--background);
+}
+/* ASIDE CONTENEDOR DE LAS 3 SECCIONES LADO IZQ. */
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 20%;
+  min-width: 320px;
+}
+
+/* HEADER */
+.perfil-section {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 2px var(--border);
+  padding: 17px;
+}
+
+.perfil {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.perfil img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px var(--border);
+}
+
+.perfil-text h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.perfil-text p {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.acciones button {
+  background: none;
+  color: var(--text-muted);
+  font-size: 24px;
+  border: none;
+  outline: none;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.acciones button:hover {
+  color: var(--primary);
+}
+
+/* SECCION BOTON NUEVO CHAT */
+.container-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-bottom: solid 2px var(--border);
+  padding: 60px 0;
+}
+
+.btn {
+  background-color: var(--primary);
+  border: none;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 17px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-light);
+  color: var(--text-primary);
+}
+
+/* CONTAINER DE CONTACTOS SCROLL*/
+.section-contacts {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.section-contacts::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section-contacts::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+/*CONTACTOS */
+.lista-contactos {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 2px var(--border);
+}
+
+.contacto {
+  display: flex;
+  border-bottom: solid 2px var(--border);
+  width: 100%;
+  padding: 15px 20px;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.contacto:hover {
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.contacto h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contacto p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contacto img {
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 2px var(--border);
+  object-fit: cover;
+}
+
+/* SECCION DEL CHAT */
+.container-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-left: solid 2px var(--border);
+  background: var(--surface);
+  width: 80%;
+  height: 100vh;
+  gap: 20px;
+}
+
+.container-chat img {
+  border-radius: 10px;
+  width: 290px;
+}
+
+.container-chat-text h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  color: var(--text-primary);
+}
+
+.container-chat-text p {
+  line-height: 1.5;
+  font-size: 20px;
+  color: var(--text-secondary);
+}
