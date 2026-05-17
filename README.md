@@ -1,5 +1,8 @@
 # CSS Avanzado Flexbox
 
+🔗 **Demo en vivo:**  
+https://rdiaz2618.github.io/desafio-flexbox-chat/
+
 Proyecto desarrollado como parte del desafío de **Desafío Latam**, enfocado en la construcción de una interfaz de mensajería utilizando **HTML5 y CSS3 con Flexbox**.
 
 ## Tecnologías utilizadas
@@ -22,7 +25,7 @@ Proyecto desarrollado como parte del desafío de **Desafío Latam**, enfocado en
 
 ## Vista previa
 
-![Vista del proyecto](./assets/images/preview.png)
+![Vista del proyecto](./assets/images/foto-page.png)
 
 ## Autor
 
